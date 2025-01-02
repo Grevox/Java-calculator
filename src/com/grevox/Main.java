@@ -8,15 +8,15 @@ class calculator {
         float n1;
         float n2;
         System.out.println("Here, put 2 numbers");
-        Scanner turetta = new Scanner(System.in);
-        n1 = turetta.nextFloat();
+        Scanner a = new Scanner(System.in);
+        n1 = a.nextFloat();
         System.out.println("\n");
-        n2 = turetta.nextFloat();
+        n2 = a.nextFloat();
         System.out.println("\n now chose an operation:\n[+] [-] [/] [*]\n");
         String wht;
-        turetta.nextLine();
-        wht = turetta.nextLine();
-        turetta.close();
+        a.nextLine();
+        wht = a.nextLine();
+        a.close();
         if(wht.equals("+")){
             return n1+n2;
         }else if (wht.equals("-")){
